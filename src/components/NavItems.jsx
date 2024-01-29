@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom";
 const NavItems = () => {
   return (
     <div className="nav-item">
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Cart 🛒</li>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <li>Home</li>
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <li>About Us</li>
+        </Link>
+        <Link to="/contact" style={{ textDecoration: "none" }}>
+          <li>Contact Us</li>
+        </Link>
       </ul>
     </div>
   );
